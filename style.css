@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+   background-color: #3D77A8;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: 0;
+   overflow: hidden;
+
+}
+
+.empty {
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    margin: 9px;
+    border: 3px solid black;
+    }
+
+.fill{
+  background-image: url(./colores.jpg);
+  height: 145px;
+  width: 145px;
+  cursor: pointer;
+}
+
+.hold {
+  border: 3px solid white ;
+}
+
+.hovered {
+  background-color: #2D2D2D;
+  border: white dashed;
+}
+
+@media (max-width: 800px) {
+  body{
+    flex-direction: column;
+  }
+}
